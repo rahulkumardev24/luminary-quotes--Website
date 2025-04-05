@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luminary Quotes | Premium Wisdom Collection</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;700&family=Montserrat:wght@300;400;600&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background-overlay"></div>
+    <div class="particles-container" id="particles-js"></div>
+    
+    <div class="container">
+        <header class="app-header">
+            <div class="header-content">
+                <h1><span class="luxury-accent">Luminary</span>Quotes</h1>
+                <p class="subtitle">Illuminating minds with timeless wisdom</p>
+            </div>
+            <div class="header-decoration">
+                <div class="decoration-line"></div>
+                <div class="decoration-diamond"></div>
+                <div class="decoration-line"></div>
+            </div>
+        </header>
+        
+        <div class="app-controls">
+            <div class="control-group">
+                <button id="refreshBtn" class="luxury-btn">
+                    <i class="fas fa-sync-alt"></i> Refresh Wisdom
+                </button>
+                <div class="search-box">
+                    <i class="fas fa-search"></i>
+                    <input type="text" id="searchInput" placeholder="Search quotes...">
+                </div>
+            </div>
+            
+            <div class="filter-group">
+                <div class="category-filter">
+                    <label for="category"><i class="fas fa-tags"></i> Category:</label>
+                    <select id="category">
+                        <option value="all">All Wisdom</option>
+                        <option value="motivational">Motivation</option>
+                        <option value="philosophy">Philosophy</option>
+                        <option value="success">Success</option>
+                        <option value="love">Love</option>
+                        <option value="life">Life</option>
+                        <option value="spiritual">Spiritual</option>
+                    </select>
+                </div>
+                
+                <div class="author-filter">
+                    <label for="author"><i class="fas fa-user-tie"></i> Author:</label>
+                    <select id="author">
+                        <option value="all">All Thinkers</option>
+                        <option value="einstein">Albert Einstein</option>
+                        <option value="mandela">Nelson Mandela</option>
+                        <option value="rumi">Rumi</option>
+                        <option value="jobs">Steve Jobs</option>
+                        <option value="angelou">Maya Angelou</option>
+                        <option value="aurelius">Marcus Aurelius</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        
+        <div id="loading" class="loading-screen">
+            <div class="spinner">
+                <div class="double-bounce1"></div>
+                <div class="double-bounce2"></div>
+            </div>
+            <p>CURATING WISDOM...</p>
+        </div>
+        
+        <div id="quotesContainer" class="quotes-gallery"></div>
+        
+        <div class="pagination">
+            <button id="prevBtn" class="pagination-btn" disabled>
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <span class="page-indicator">Page <span id="currentPage">1</span> of <span id="totalPages">5</span></span>
+            <button id="nextBtn" class="pagination-btn">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+        </div>
+        
+        <footer class="luxury-footer">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <i class="fas fa-quote-right"></i> Luminary
+                </div>
+                <div class="footer-links">
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest"></i></a>
+                </div>
+            </div>
+            <p class="copyright">© <span id="currentYear"></span> Luminary Quotes. All wisdom curated with care.</p>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
