@@ -17,8 +17,9 @@
 
 ## 📸 Demo
 
-![Luminary Quotes Screenshot](./screenshot.png) <!-- Replace with your actual image path -->
-
+<img src = "https://github.com/rahulkumardev24/luminary-quotes--Website/blob/main/Screenshot%20(79).png" />
+<img src = "https://github.com/rahulkumardev24/luminary-quotes--Website/blob/main/Screenshot%20(80).png" />
+<img src = "https://github.com/rahulkumardev24/luminary-quotes--Website/blob/main/Screenshot%20(81).png" />
 🔗 **Live Preview**: _[Add your GitHub Pages or deployment link here]_
 
 ---
